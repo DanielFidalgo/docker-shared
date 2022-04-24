@@ -67,7 +67,7 @@ function interpolate() {
    local line lineEscaped
    while IFS= read -r line || [ -n "$line" ]; do  # the `||` clause ensures that the last line is read even if it doesn't end with \n
       # escape all chars that could trigger an expansion
-      IFS= read -r lineEscaped <<(echo "$line" | tr '`([$' '\1\2\3\4')
+      IFS= read -r lineEscaped < <(echo "$line" | tr '`([$' '\1\2\3\4')
       # selectively re-enable ${ references
       lineEscaped=${lineEscaped//$'\4'{/\${}
       # escape back slashes to preserve them
