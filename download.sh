@@ -16,7 +16,7 @@ if [ "$#" -ne 2 ]; then
    echo
    echo "Examples:"
    echo " $ $0 v1 ./.shared"
-   echo " $ curl -sSf https://raw.githubusercontent.com/vegardit/docker-shared/v1/download.sh?_=\$(date +%s) | bash -s v1 ./.shared"
+   echo " $ curl -sSf https://raw.githubusercontent.com/DanielFidalgo/docker-shared/v1/download.sh?_=\$(date +%s) | bash -s v1 ./.shared"
    exit 1
 fi
 
