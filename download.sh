@@ -38,12 +38,12 @@ fi
 #################################################
 # download
 #################################################
-echo "INFO: Downloading [github.com/vegardit/docker-shared@$branch] into [$install_dir]..."
+echo "INFO: Downloading [github.com/DanielFidalgo/docker-shared@$branch] into [$install_dir]..."
 
 #curl + tar is faster
-#git clone --depth 1 --single-branch --branch $branch https://github.com/vegardit/docker-shared/ $install_dir
+#git clone --depth 1 --single-branch --branch $branch https://github.com/DanielFidalgo/docker-shared/ $install_dir
 mkdir -p "$install_dir"
-curl -fsS https://codeload.github.com/vegardit/docker-shared/tar.gz/refs/heads/$branch | tar xz -C "$install_dir" --strip-components 1
+curl -fsS https://codeload.github.com/DanielFidalgo/docker-shared/tar.gz/refs/heads/$branch | tar xz -C "$install_dir" --strip-components 1
 
 
 #################################################
