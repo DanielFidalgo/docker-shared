@@ -11,7 +11,7 @@ source $(dirname ${BASH_SOURCE[0]})/bash-init.sh
 #################################################
 # determine directory of current script
 #################################################
-project_root=$(readlink -e $(dirname "$0"))
+project_root=$(readlink -fn $(dirname "$0"))
 echo "project_root=$project_root"
 
 
